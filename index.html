@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navjot | Personal Finance Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">FinancePro</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="main-content">
+        <div class="content-left">
+            <h1><i>Personal Finance <br>Manager</i></h1><br>
+            <p>At FinancePro, we make managing your finances simple and stress-free. 
+                Our platform helps you set clear budgets, track expenses, and understand your 
+                financial health with ease. Whether you're just starting on your financial journey or 
+                looking for a better way to organize your expenses, our easy-to-use tools are designed 
+                to help you take control of your money and achieve your financial goals. 
+                Let FinancePro guide you toward smarter spending and better savings today.</p>
+            <button class="btn-primary">Join Us</button>
+        </div>
+
+        <!-- Budget Calculator on the Right Side -->
+        <div class="content-right">
+            <div class="calculator-box">
+                <h2>Budget and Expense Calculator</h2><br>
+                <label for="total-budget">Enter Total Amount:</label>
+                <input type="number" id="total-budget" placeholder="Enter Total Amount">
+                <button onclick="setBudget()">Set Budget</button>
+
+                <label for="expense-title">Enter Title of Product:</label>
+                <input type="text" id="expense-title" placeholder="Enter Title">
+                <label for="expense-cost">Enter Cost of Product:</label>
+                <input type="number" id="expense-cost" placeholder="Enter Cost">
+                <button onclick="addExpense()">Add Expense</button>
+
+                <div class="summary">
+                    <h3>Total Budget: <span id="total-budget-value">0</span></h3>
+                    <h3>Total Expenses: <span id="total-expenses">0</span></h3>
+                    <h3>Balance: <span id="balance">0</span></h3>
+                </div>
+
+                <h3>Expense List:</h3>
+                <ul id="expense-list"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h1><i>About Us<br></i></h1>
+        <br>
+        <p>At FinancePro, we believe that financial well-being is key to a balanced and fulfilling life. 
+            Our mission is to empower individuals and families to take control of their finances by 
+            providing easy-to-use budgeting tools and expense trackers. Whether you’re trying to save for a 
+            big goal, manage daily expenses, or simply get a clearer picture of your financial situation, 
+            we’re here to help you make informed decisions that lead to a more secure future.</p>
+<br>
+        <p>We understand that managing personal finances can often feel overwhelming, 
+            but it doesn’t have to be. With our intuitive platform, users can track their income, 
+            expenses, and budgets with ease, giving them the clarity they need to plan ahead and 
+            stay within their financial limits. At FinancePro, we also offer educational resources 
+            and expert tips on personal finance to guide you through the often-complicated world of 
+            money management, so you can achieve your financial goals with confidence.</p>
+            <br>
+        <p>Our team is committed to constantly improving our services and providing exceptional customer support.
+             We listen to our users’ feedback and strive to build a platform that adapts to your unique financial needs. 
+             We envision a world where managing personal finances is seamless, stress-free, and available to everyone, 
+             no matter their financial literacy level. Let FinancePro be your trusted partner in building a better financial future.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h1><i>Contact Us</i></h1> <br>
+        <p>If you have any questions or need help, feel free to contact us. We are here to assist you!</p>
+
+        <form class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>FinancePro &copy; Navjot</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
